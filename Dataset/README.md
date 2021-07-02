@@ -7,10 +7,13 @@
   
    ### Usage: file: 'data_100000.csv' de Newyork City. Prepare data for model ML.
    ### Cleaning data base:
-       1. drop columns :['the_geom','state','latitude','longitude']
+       1. drop columns :['the_geom','state','boroname']
        2. read total_nan_values=34945
-       3. convert date_time
-       4. "strip" and "lower_case" in the columns:
+       3. df.dropna(how='all')
+       4. drop duplicated 
+       5. replace ' ' by np.nan
+       6. convert date_time
+       7. "strip" and "lower_case" in the columns:
                         ['curb_loc',
                         'status',
                         'health',
@@ -31,9 +34,9 @@
                         'brnch_shoe',
                         'brnch_othe',
                         'address',
-                        'zip_city',
-                        'boroname']
-        5. all column change from bool to int:
+                        'zip_city']
+                       
+        8. all column change from bool to int:
                        ['root_stone',
                       'root_grate',
                       'root_other',
@@ -43,6 +46,6 @@
                       'brnch_ligh',
                       'brnch_shoe',
                       'brnch_othe']
-        6. observe values "Nan" and make conclusion wat to do.
-        7. file output after cleaning:  'data_100000_clean.csv'
+        9. observe values "Nan" and make conclusion wat to do.
+       10. file output after cleaning:  'data_100000_clean.csv'
 

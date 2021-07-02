@@ -5,7 +5,7 @@
  ## Description
     
   
-   ### Usage: file: 'data_100000.csv' de Newyork City. Prepare data for model ML.
+   ### Usage: file: 'data_100000.csv' of Newyork City. Prepare data for model ML.
    ### Cleaning data base:
        1. drop columns :['the_geom','state','boroname']
        2. read total_nan_values=34945
